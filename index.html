@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Dinâmica - Projeto Front-End Avançado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokédex Dinâmica</h1>
+        <p>Catálogo completo com busca, filtragem e paginação.</p>
+    </header>
+
+    <main class="container">
+        <section class="search-panel">
+            <input type="text" id="search-input" placeholder="Buscar por Nome ou Habilidade..." aria-label="Buscar Pokémon">
+            
+            <select id="type-filter" aria-label="Filtrar por Tipo">
+                <option value="all">Filtrar por Tipo</option>
+            </select>
+
+            <button id="reset-filter">Limpar Filtros</button>
+        </section>
+
+        <div id="cards-container">
+            <p>Carregando catálogo completo...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="pokemon-modal" class="pokemon-modal">
+            <button id="close-modal" class="close-modal">&times;</button>
+            <div id="modal-content">
+                <h2>Carregando detalhes...</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
